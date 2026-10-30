@@ -1,0 +1,24 @@
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  background-color: #eef2ff;
+  color: #3730a3;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.tier {
+  padding-left: 0.5rem;
+  border-left: 1px solid #a5b4fc;
+  color: #6366f1;
+  font-weight: 500;
+}

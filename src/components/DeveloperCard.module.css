@@ -1,0 +1,138 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 640px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar,
+.initials {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.avatar {
+  object-fit: cover;
+}
+
+.initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e7ff;
+  color: #3730a3;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.identity {
+  min-width: 0;
+}
+
+.identity h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.identity p {
+  margin: 0.25rem 0 0;
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.metrics dt {
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.metrics dd {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Each metric occupies one column across two rows. */
+.metrics dt:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.metrics dd:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.metrics dt:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.metrics dd:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.metrics dt:nth-of-type(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.metrics dd:nth-of-type(3) {
+  grid-column: 3;
+  grid-row: 2;
+}
